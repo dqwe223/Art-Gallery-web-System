@@ -1,0 +1,33 @@
+<link rel="stylesheet" href="losty.css" />
+
+<main class="form-container">
+    <h1>Admin Login</h1>
+    <form action="" method="post" name="f1">
+        <div class="form-floating">
+            <label for="id">Email :</label>
+            <input type="text" class="box" name="email" placeholder="name@example.com" required>
+        </div>
+        <div class="form-floating">                 
+            <label for="pwd">Password :</label>
+            <input type="password" class="box" name="password" placeholder="Enter Password" required>
+        </div>  
+        <button type="submit" class="btn" name="sub">Login</button>
+    </form>
+</main>
+
+<?php
+include("../connection.php");
+if ( isset( $_POST[ 'sub' ] ) ) {
+	$id = $_POST[ 'email' ];
+	$pas = $_POST[ 'password' ];
+	$sql= "select * from admin_t where a_email='".$id."' and a_pwd='".$pas."'"; 
+	$result = mysqli_query($con, $sql);
+	if (mysqli_num_rows($result) > 0) {
+
+header('Location:../admin/index.php');
+} else {
+    echo "<script> window.alert('Your input is invalid! Please Enter the Correct Id & Password! ')</script>";
+    echo "<script>window.location.assign('admin_login.php')</script>";
+}}
+mysqli_close($con);
+?>
