@@ -1,121 +1,160 @@
-🎨 Online Art Gallery Management System
-📌 Project Overview
+# 🎨 Online Art Gallery Management System
 
-The Online Art Gallery Management System is a web-based platform developed using HTML, CSS, JavaScript, PHP, and MySQL. The system provides a complete solution for displaying, managing, and purchasing artwork online.
+<p align="center">
+  <img src="https://img.shields.io/badge/PHP-Backend-blue?style=for-the-badge&logo=php">
+  <img src="https://img.shields.io/badge/MySQL-Database-orange?style=for-the-badge&logo=mysql">
+  <img src="https://img.shields.io/badge/HTML5-Frontend-red?style=for-the-badge&logo=html5">
+  <img src="https://img.shields.io/badge/CSS3-Styling-blue?style=for-the-badge&logo=css3">
+  <img src="https://img.shields.io/badge/JavaScript-Interactive-yellow?style=for-the-badge&logo=javascript">
+</p>
 
-The platform consists of two main modules:
+<p align="center">
+  A complete web-based Art Gallery Management System developed using PHP, MySQL, HTML, CSS, and JavaScript.
+</p>
 
-Customer Panel
-Admin Panel
+---
 
-Customers can browse artworks, view detailed information, add items to their cart, purchase artwork, and submit feedback. Administrators can manage artwork listings, monitor customer orders, and review feedback through a dedicated administration dashboard.
+# 📖 Project Overview
 
-🚀 Features
-👤 Customer Panel
+The **Online Art Gallery Management System** is a modern web application designed to provide a digital platform for displaying, managing, and selling artworks online.
 
-The customer interface provides a user-friendly experience for art lovers and buyers.
+The system consists of two major modules:
 
-🎨 Art Gallery
-Browse available artworks.
-View artwork images.
-Search and explore art collections.
-📄 Art Details
-Artwork title.
-Artist information.
-Price details.
-Artwork description.
-High-quality image preview.
-🛒 Shopping Cart
-Add artworks to cart.
-Remove items from cart.
-Update cart contents.
-Calculate total purchase amount.
-💳 Purchase Process
-Place orders for selected artworks.
-View order summary before confirmation.
-⭐ Feedback System
-Submit customer feedback.
-Share user experience and suggestions.
-🔐 Admin Panel
+- 👤 Customer Panel
+- 🔐 Admin Panel
 
-The administration dashboard provides complete control over system operations.
+Customers can browse available artworks, view detailed information, purchase artworks, manage their shopping cart, and provide feedback.
 
-🎨 Artwork Management
+Administrators have full control over the gallery, including artwork management, order monitoring, and feedback review.
+
+---
+
+# ✨ Key Features
+
+## 👤 Customer Panel
+
+### 🎨 Art Gallery
+- Browse available artworks
+- View artwork images
+- Explore art collections
+- Responsive gallery layout
+
+### 📄 Artwork Details
+- Artwork title
+- Artwork image
+- Price information
+- Detailed description
+- Artist information (Optional)
+
+### 🛒 Shopping Cart
+- Add artworks to cart
+- Remove artworks from cart
+- View cart summary
+- Calculate total amount
+
+### 💳 Order Management
+- Purchase artworks
+- View order details
+- Order confirmation process
+
+### ⭐ Feedback System
+- Submit feedback
+- Share suggestions
+- Customer experience review
+
+---
+
+## 🔐 Admin Panel
+
+### 🎨 Artwork Management
 
 Administrators can:
 
-Add new artworks.
-Edit artwork details.
-Update artwork prices.
-Modify artwork descriptions.
-Change artwork images.
-Delete artworks.
-📋 Artwork Database Management
-View all artwork records.
-Maintain artwork inventory.
-Manage gallery content efficiently.
-📦 Order Management
-View customer orders.
-Track purchase details.
-Monitor order history.
-💬 Feedback Management
-View customer feedback.
-Analyze customer satisfaction.
-Review suggestions and comments.
-🛠️ Technologies Used
-Technology	Purpose
-HTML5	Structure of web pages
-CSS3	Styling and responsive design
-JavaScript	Client-side interactivity
-PHP	Server-side processing
-MySQL	Database management
-Bootstrap (Optional)	Responsive UI components
-🏗️ System Architecture
-Customer Module
+- Add new artworks
+- Edit artwork details
+- Update prices
+- Update descriptions
+- Change artwork images
+- Delete artworks
+
+### 📋 Gallery Management
+
+- View all artworks
+- Manage artwork records
+- Maintain gallery database
+
+### 📦 Order Management
+
+- View customer orders
+- Monitor order history
+- Manage purchase records
+
+### 💬 Feedback Management
+
+- View customer feedback
+- Analyze customer suggestions
+- Improve customer satisfaction
+
+---
+
+# 🛠️ Technologies Used
+
+| Technology | Purpose |
+|------------|----------|
+| HTML5 | Structure of web pages |
+| CSS3 | Styling and responsive design |
+| JavaScript | Client-side functionality |
+| PHP | Server-side scripting |
+| MySQL | Database management |
+| Bootstrap | Responsive UI components |
+| Apache | Web server |
+
+---
+
+# 🖥️ System Modules
+
+## Customer Module
+
+```text
 Customer
-   │
-   ├── View Art Gallery
-   ├── View Art Details
-   ├── Add to Cart
-   ├── Purchase Artwork
-   └── Submit Feedback
-Admin Module
+│
+├── Home Page
+├── Art Gallery
+├── Art Details
+├── Shopping Cart
+├── Purchase Artwork
+└── Submit Feedback
+```
+
+## Admin Module
+
+```text
 Administrator
-   │
-   ├── Manage Artworks
-   │      ├── Add Art
-   │      ├── Update Art
-   │      └── Delete Art
-   │
-   ├── View Orders
-   └── View Feedback
-🗄️ Database Structure
-Art Table
-Field	Description
-art_id	Unique Artwork ID
-art_name	Artwork Name
-description	Artwork Description
-price	Artwork Price
-image	Artwork Image
-Orders Table
-Field	Description
-order_id	Order ID
-customer_name	Customer Name
-artwork_id	Purchased Artwork
-total_amount	Order Amount
-order_date	Purchase Date
-Feedback Table
-Field	Description
-feedback_id	Feedback ID
-customer_name	Customer Name
-feedback_message	Feedback Content
-submitted_date	Submission Date
-📂 Project Structure
+│
+├── Dashboard
+├── Manage Artworks
+│     ├── Add Artwork
+│     ├── Edit Artwork
+│     ├── Delete Artwork
+│     └── Update Artwork
+│
+├── View Orders
+└── View Feedback
+```
+
+---
+
+# 📂 Project Structure
+
+```text
 Online-Art-Gallery/
 │
 ├── admin/
 │   ├── dashboard.php
 │   ├── manage_art.php
+│   ├── add_art.php
+│   ├── edit_art.php
+│   ├── delete_art.php
 │   ├── orders.php
 │   └── feedback.php
 │
@@ -123,97 +162,295 @@ Online-Art-Gallery/
 │   ├── gallery.php
 │   ├── art_details.php
 │   ├── cart.php
+│   ├── checkout.php
 │   └── feedback.php
 │
 ├── assets/
 │   ├── css/
 │   ├── js/
-│   └── images/
+│   ├── images/
+│   └── uploads/
 │
 ├── database/
 │   └── art_gallery.sql
 │
 ├── includes/
-│   └── db_connection.php
+│   ├── db_connection.php
+│   └── functions.php
 │
+├── index.php
 └── README.md
-⚙️ Installation Guide
-Prerequisites
+```
 
-Before running the project, ensure you have:
+---
 
-XAMPP / WAMP Server
-PHP 7.4 or later
-MySQL Database
-Modern Web Browser
-Setup Instructions
-Step 1: Clone Repository
+# 🗄️ Database Design
+
+## Art Table
+
+| Field | Type |
+|---------|---------|
+| art_id | INT |
+| art_name | VARCHAR |
+| description | TEXT |
+| price | DECIMAL |
+| image | VARCHAR |
+
+---
+
+## Orders Table
+
+| Field | Type |
+|---------|---------|
+| order_id | INT |
+| customer_name | VARCHAR |
+| artwork_id | INT |
+| total_amount | DECIMAL |
+| order_date | DATE |
+
+---
+
+## Feedback Table
+
+| Field | Type |
+|---------|---------|
+| feedback_id | INT |
+| customer_name | VARCHAR |
+| feedback_message | TEXT |
+| submitted_date | DATE |
+
+---
+
+# ⚙️ Installation Guide
+
+## 📋 Requirements
+
+Before running the project, install:
+
+- PHP 8.0 or later
+- MySQL / MariaDB
+- Apache Server
+- XAMPP (Recommended)
+
+---
+
+# 🚀 XAMPP Installation
+
+## Step 1: Download XAMPP
+
+Download XAMPP from:
+
+https://www.apachefriends.org/
+
+---
+
+## Step 2: Install XAMPP
+
+Select the following components:
+
+✅ Apache
+
+✅ MySQL
+
+✅ PHP
+
+✅ phpMyAdmin
+
+---
+
+## Step 3: Start Services
+
+Open XAMPP Control Panel and start:
+
+- Apache
+- MySQL
+
+---
+
+## Step 4: Clone Repository
+
+```bash
 git clone https://github.com/your-username/online-art-gallery.git
-Step 2: Move Project
+```
+
+---
+
+## Step 5: Move Project
 
 Copy the project folder into:
 
-xampp/htdocs/
-Step 3: Create Database
+```text
+C:\xampp\htdocs\
+```
 
-Open phpMyAdmin and create a database:
+Example:
 
+```text
+C:\xampp\htdocs\online-art-gallery
+```
+
+---
+
+## Step 6: Create Database
+
+Open:
+
+```text
+http://localhost/phpmyadmin
+```
+
+Create database:
+
+```sql
 CREATE DATABASE art_gallery;
-Step 4: Import Database
+```
+
+---
+
+## Step 7: Import Database
 
 Import:
 
+```text
 database/art_gallery.sql
-Step 5: Configure Database Connection
+```
 
-Update database credentials inside:
+using phpMyAdmin.
 
+---
+
+## Step 8: Configure Database
+
+Open:
+
+```php
 includes/db_connection.php
+```
+
+Update credentials:
+
+```php
+<?php
+
 $host = "localhost";
 $user = "root";
 $password = "";
 $database = "art_gallery";
-Step 6: Run Project
+
+$conn = mysqli_connect(
+    $host,
+    $user,
+    $password,
+    $database
+);
+
+if (!$conn) {
+    die("Connection Failed: " . mysqli_connect_error());
+}
+
+?>
+```
+
+---
+
+## Step 9: Run Project
 
 Open browser:
 
+```text
 http://localhost/online-art-gallery
-📸 Screenshots
-Customer Panel
-Home Page
-Art Gallery
-Art Details Page
-Shopping Cart
-Feedback Form
-Admin Panel
-Dashboard
-Artwork Management
-Order List
-Feedback Viewer
-🔒 Security Features
-Server-side form validation.
-SQL Injection prevention.
-Input sanitization.
-Session management.
-Secure database connectivity.
-🎯 Future Enhancements
-Online payment gateway integration.
-User registration and authentication.
-Wishlist functionality.
-Advanced search and filtering.
-Artwork categories.
-Mobile application support.
-Email notifications.
-Sales analytics dashboard.
-👨‍💻 Author
+```
 
-Iruka Mihishan
+---
 
-Full-Stack Developer
-BSc (Hons) Information Technology Undergraduate
-Horizon Campus
-📄 License
+# 🔒 Security Features
+
+- SQL Injection Prevention
+- Input Validation
+- Data Sanitization
+- Session Management
+- Secure Database Connection
+- Form Validation
+
+---
+
+# 📸 Screenshots
+
+## Customer Panel
+
+- Home Page
+- Art Gallery
+- Art Details Page
+- Shopping Cart
+- Feedback Page
+
+## Admin Panel
+
+- Dashboard
+- Artwork Management
+- Orders Management
+- Feedback Management
+
+---
+
+# 🚀 Future Enhancements
+
+- User Registration & Login
+- Online Payment Gateway
+- Artwork Categories
+- Search & Filtering
+- Wishlist System
+- Email Notifications
+- Sales Reports
+- Analytics Dashboard
+- Mobile Application
+
+---
+
+# 🧪 Testing
+
+The application has been tested for:
+
+- Artwork Management
+- Cart Operations
+- Database Connectivity
+- Feedback Submission
+- Order Processing
+- CRUD Operations
+
+---
+
+# 👨‍💻 Developer
+
+### Iruka Mihishan
+
+- BSc (Hons) Information Technology Undergraduate
+- Full-Stack Developer
+- Machine Learning Enthusiast
+- Horizon Campus
+
+---
+
+# 📄 License
 
 This project is developed for educational and academic purposes.
 
-⭐ If you found this project useful, don't forget to star the repository on GitHub! ⭐
+---
+
+# ⭐ Support
+
+If you found this project useful:
+
+⭐ Star the repository
+
+🍴 Fork the project
+
+🛠️ Contribute improvements
+
+📢 Share with others
+
+---
+
+<p align="center">
+  Made with ❤️ using PHP, MySQL, HTML, CSS & JavaScript
+</p>
